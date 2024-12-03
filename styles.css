@@ -1,0 +1,100 @@
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background:#DDB2B5;
+        color: #fff;
+        }
+        
+        .game{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        
+        .title{
+        position: absolute;
+        top: 0;
+        font-size: 3.5rem;
+        z-index: 2;
+        font-weight: bold;
+        }
+        
+       
+        .score{
+        display: flex;
+        width: 40vw;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 75px;
+        z-index: 1;
+        }
+        
+        
+        .p-count,.c-count{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        }
+        
+        
+        .options{
+        display: flex;
+        width: 50vw;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        }
+        
+        
+        .rock, .paper, .scissor{
+        padding: 0.7rem;
+        width: 125px;
+        border-radius: 10px;
+        background: #C99597;
+        outline: none;
+        border-color: #f1b3be;
+        border: none;
+        cursor: pointer;
+        }
+        
+        .move{
+        font-size: 2.5rem;
+        font-weight: bold;
+        }
+        
+        .reload {
+        display: none;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        background: #C99597;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+        
+        .result{
+        margin-top: 20px;
+        font-size: 1.2rem;
+        }
+        
+        
+        @media screen and (max-width: 612px)
+        {  
+        .title{
+            text-align: center;
+        }
+        .score{
+            position: absolute;
+            top: 200px;
+            width: 100vw;
+        }
+        .options{
+            width: 100vw;
+        }
+        }  
